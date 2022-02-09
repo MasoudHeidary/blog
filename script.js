@@ -258,8 +258,7 @@ $(document).ready(function () {
     }
   });
 
-  terminal.css("height", `${$(window).height() * 0.9}px`);
-  $(".window").css("width", `${$(window).width() * 0.9}px`);
+  resizeTerminal();
 
   // Set the window title
   title.text("Masoud Heidary - Please open Terminal in just Desktop|Laptop");
@@ -275,3 +274,12 @@ $(document).ready(function () {
   // Display virtual keyboard in mobile
   $("#v-key").focus();
 });
+
+function resizeTerminal() {
+  $(".terminal").css("height", `${$(window).height() * 0.9}px`);
+  $(".window").css("width", `${$(window).width() * 0.9}px`);
+}
+
+window.onresize = function () {
+  resizeTerminal();
+};
