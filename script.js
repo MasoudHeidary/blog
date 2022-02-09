@@ -273,12 +273,48 @@ $(document).ready(function () {
 
   // Display virtual keyboard in mobile
   $("#v-key").focus();
-  $(".window").click(function(){
-    console.log('focus');
+  $(".window").click(function () {
+    console.log("focus");
     $("#v-key").focus();
-  })
-});
+  });
+  $('#v-key').keydown(function (e) {
+    e = e || window.event;
+    var keyCode = typeof e.which === "number" ? e.which : e.keyCode;
 
+    // BACKSPACE
+    if (keyCode === 8 && e.target.tagName !== "INPUT" && e.target.tagName !== "TEXTAREA") {
+      e.preventDefault();
+      if (command !== "") {
+        erase(1);
+      }
+    }
+
+    // UP or DOWN
+    if (keyCode === 38 || keyCode === 40) {
+      // Move up or down the history
+      if (keyCode === 38) {
+        // UP
+        historyIndex--;
+        if (historyIndex < 0) {
+          historyIndex++;
+        }
+      } else if (keyCode === 40) {
+        // DOWN
+        historyIndex++;
+        if (historyIndex > commandHistory.length - 1) {
+          historyIndex--;
+        }
+      }
+
+      // Get command
+      var cmd = commandHistory[historyIndex];
+      if (cmd !== undefined) {
+        clearCommand();
+        appendCommand(cmd);
+      }
+    }
+  });
+});
 
 // ==============================================================
 // responsible terminal size base on screen size
@@ -290,5 +326,3 @@ window.onresize = function () {
   resizeTerminal();
 };
 // ==============================================================
-
-
