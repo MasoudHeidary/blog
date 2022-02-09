@@ -273,13 +273,22 @@ $(document).ready(function () {
 
   // Display virtual keyboard in mobile
   $("#v-key").focus();
+  $(".window").click(function(){
+    console.log('focus');
+    $("#v-key").focus();
+  })
 });
 
+
+// ==============================================================
+// responsible terminal size base on screen size
 function resizeTerminal() {
   $(".terminal").css("height", `${$(window).height() * 0.9}px`);
   $(".window").css("width", `${$(window).width() * 0.9}px`);
 }
-
 window.onresize = function () {
   resizeTerminal();
 };
+// ==============================================================
+
+
