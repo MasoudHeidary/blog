@@ -268,7 +268,7 @@ $(document).ready(function () {
   date = date.substr(0, date.indexOf("GMT") - 1);
 
   // Display last-login and promt
-  terminal.append("Last login: " + date + " on Masoud Heidary VPS\n");
+  terminal.append("Last login: " + date + " on Masoud Heidary v0.1.0\n");
   displayPrompt();
 
   // Display virtual keyboard in mobile
