@@ -277,7 +277,8 @@ $(document).ready(function () {
     console.log("focus");
     $("#v-key").focus();
   });
-  $('#v-key').keydown(function (e) {
+
+  $('#v-key').on('keydown',function (e) {
     e = e || window.event;
     var keyCode = typeof e.which === "number" ? e.which : e.keyCode;
 
