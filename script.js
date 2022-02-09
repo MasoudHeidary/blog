@@ -262,7 +262,7 @@ $(document).ready(function () {
   $(".window").css("width", `${$(window).width() * 0.9}px`);
 
   // Set the window title
-  title.text("Masoud Heidary - Please open Terminal in Desktop mode");
+  title.text("Masoud Heidary - Please open Terminal in just Desktop|Laptop");
 
   // Get the date for our fake last-login
   var date = new Date().toString();
@@ -271,4 +271,7 @@ $(document).ready(function () {
   // Display last-login and promt
   terminal.append("Last login: " + date + " on Masoud Heidary VPS\n");
   displayPrompt();
+
+  // Display virtual keyboard in mobile
+  $("#v-key").focus();
 });
