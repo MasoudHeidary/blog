@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Masoud Heidary</title>
+  <title>CodePen - My Terminal</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Muli:400,800'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<div id="nuotron">
-  <div class="ellipse"></div>
-  <div class="dot"></div>
-</div><a id="text" href="http://t.me/MasoudHeidary" target="_blank">
-  <div class="hover">
-    <div>Hover over me to watch</div>
-    <div>the magic happening</div>
+  <!-- partial:index.partial.html -->
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:200' rel='stylesheet' type='text/css'>
+  <div class="container">
+    <div class="window">
+      <div class="handle">
+        <div class="buttons">
+          <button class="close">
+          </button>
+          <button class="minimize">
+          </button>
+          <button class="maximize">
+          </button>
+        </div>
+        <span class="title"></span>
+      </div>
+      <div class="terminal"></div>
+    </div>
   </div>
-  <div class="website">Click to contact me on telegram</div>
-  <div class="nuotron">Masoud</div>
-  <div class="agency">Heidary</div></a>
-<!-- partial -->
-  <script  src="./script.js"></script>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="./script.js"></script>
 
 </body>
+
 </html>
