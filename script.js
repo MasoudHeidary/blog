@@ -279,6 +279,7 @@ $(document).ready(function () {
   });
 
   $('#v-key').on('keydown',function (e) {
+    alert(e.which);
     e = e || window.event;
     var keyCode = typeof e.which === "number" ? e.which : e.keyCode;
 
