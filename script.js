@@ -13,25 +13,61 @@ $(document).ready(function () {
   }
 
   function help() {
-    terminal.append("There is no help... MUAHAHAHAHA. >:D\n");
+    terminal.append(
+      "clear              ==> clear terminal outpue\n" +
+        "cv | resume        ==> open my resume website\n" +
+        "call               ==> call to my phone (iran)\n" +
+        "call-us            ==> call to my phone (United State)\n" +
+        "email || gmail     ==> send an email to me\n" +
+        "telegram           ==> my telegram contact\n" +
+        "exit | close       ==> close page\n"
+    );
   }
 
-  function echo(args) {
-    var str = args.join(" ");
-    terminal.append(str + "\n");
+  function openTelegram() {
+    window.open("https://t.me/MasoudHeidary");
   }
 
-  function fortune() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://cdn.rawgit.com/bmc/fortunes/master/fortunes", false);
-    xhr.send(null);
-
-    if (xhr.status === 200) {
-      var fortunes = xhr.responseText.split("%");
-      var fortune = fortunes[getRandomInt(0, fortunes.length)].trim();
-      terminal.append(fortune + "\n");
-    }
+  function openGithub() {
+    window.open("https://github.com/MasoudHeidary");
   }
+
+  function openGmail() {
+    window.open("mailto:MasoudHeidaryDeveloper@gmail.com");
+  }
+
+  function callUS() {
+    window.open("tel:+14247818751");
+  }
+
+  function callIran() {
+    window.open("tel:+989109958035");
+  }
+
+  function openCV() {
+    window.open("https://MasoudHeidaryMH.ir");
+  }
+
+  function closePage() {
+    window.close();
+  }
+
+  //   function echo(args) {
+  //     var str = args.join(" ");
+  //     terminal.append(str + "\n");
+  //   }
+  //
+  //   function fortune() {
+  //     var xhr = new XMLHttpRequest();
+  //     xhr.open("GET", "https://cdn.rawgit.com/bmc/fortunes/master/fortunes", false);
+  //     xhr.send(null);
+
+  //     if (xhr.status === 200) {
+  //       var fortunes = xhr.responseText.split("%");
+  //       var fortune = fortunes[getRandomInt(0, fortunes.length)].trim();
+  //       terminal.append(fortune + "\n");
+  //     }
+  //   }
   // END COMMANDS
 
   var title = $(".title");
@@ -53,13 +89,53 @@ $(document).ready(function () {
       function: help,
     },
     {
-      name: "fortune",
-      function: fortune,
+      name: "telegram",
+      function: openTelegram,
     },
     {
-      name: "echo",
-      function: echo,
+      name: "github",
+      function: openGithub,
     },
+    {
+      name: "gmail",
+      function: openGmail,
+    },
+    {
+      name: "email",
+      function: openGmail,
+    },
+    {
+      name: "call",
+      function: callIran,
+    },
+    {
+      name: "call-us",
+      function: callUS,
+    },
+    {
+      name: "cv",
+      function: openCV,
+    },
+    {
+      name: "resume",
+      function: openCV,
+    },
+    {
+      name: "exit",
+      function: closePage,
+    },
+    {
+      name: "close",
+      function: closePage,
+    },
+    // {
+    //   name: "fortune",
+    //   function: fortune,
+    // },
+    // {
+    //   name: "echo",
+    //   function: echo,
+    // },
   ];
 
   function processCommand() {
@@ -182,17 +258,17 @@ $(document).ready(function () {
     }
   });
 
-  terminal.css("height", `${$(window).height() - 200}px`);
-  $('.window').css("width", `${$(window).width() - 200}px`)
-  
+  terminal.css("height", `${$(window).height() * 0.9}px`);
+  $(".window").css("width", `${$(window).width() * 0.9}px`);
+
   // Set the window title
-  title.text("1. marc@mbp: ~ (zsh)");
+  title.text("Masoud Heidary - Please open Terminal in Desktop mode");
 
   // Get the date for our fake last-login
   var date = new Date().toString();
   date = date.substr(0, date.indexOf("GMT") - 1);
 
   // Display last-login and promt
-  terminal.append("Last login: " + date + " on ttys000\n");
+  terminal.append("Last login: " + date + " on Masoud Heidary VPS\n");
   displayPrompt();
 });
