@@ -17,7 +17,7 @@ $(document).ready(function () {
       "clear              ==> clear terminal outpue\n" +
         "cv | resume        ==> open my resume website\n" +
         "call               ==> call to my phone (iran)\n" +
-        "call-us            ==> call to my phone (United State)\n" +
+        "call-us            ==> call to my phone (United States)\n" +
         "email || gmail     ==> send an email to me\n" +
         "telegram           ==> my telegram contact\n" +
         "exit | close       ==> close page\n"
