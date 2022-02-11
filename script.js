@@ -17,7 +17,7 @@ $(document).ready(function () {
       "clear              ==> clear terminal outpue\n" +
         "cv | resume        ==> open my resume website\n" +
         "call               ==> call to my phone (iran)\n" +
-        "call-us            ==> call to my phone (United States)\n" +
+        "call-us            ==> call to my phone (United State)\n" +
         "email || gmail     ==> send an email to me\n" +
         "telegram           ==> my telegram contact\n" +
         "exit | close       ==> close page\n"
@@ -72,7 +72,7 @@ $(document).ready(function () {
 
   var title = $(".title");
   var terminal = $(".terminal");
-  var prompt = "➜";
+  var prompt = "MasoudHeidary@";
   var path = "~";
 
   var commandHistory = [];
@@ -161,7 +161,7 @@ $(document).ready(function () {
 
     // No match was found...
     if (!isValid) {
-      terminal.append("zsh: command not found: " + command + "\n");
+      terminal.append("zsh: command not found: " + command + "\ntry \"help\" command\n");
     }
 
     // Add to command history and clean up.
@@ -268,7 +268,7 @@ $(document).ready(function () {
   date = date.substr(0, date.indexOf("GMT") - 1);
 
   // Display last-login and promt
-  terminal.append("Last login: " + date + " on Masoud Heidary VPS\n");
+  terminal.append("Last login: " + date + " on Masoud Heidary Github\n");
   displayPrompt();
 });
 
