@@ -16,7 +16,8 @@ $(document).ready(function () {
     terminal.append(
       "clear              ⇒ clear terminal outpue\n" +
         "cv | resume        ⇒ open my resume website\n" +
-        "call-IR               ⇒ call to my phone (Iran)\n" +
+        "linkedin           ⇒ open linkedin page\n" +
+        "call-IR            ⇒ call to my phone (Iran)\n" +
         "call-US            ⇒ call to my phone (United State)\n" +
         "email || gmail     ⇒ send an email to me\n" +
         "telegram           ⇒ my telegram contact\n" +
@@ -34,6 +35,10 @@ $(document).ready(function () {
 
   function openGmail() {
     window.open("mailto:MasoudHeidaryDeveloper@gmail.com");
+  }
+
+  function openLinkedIn() {
+    window.open("https://www.linkedin.com/in/MasoudHeidary");
   }
 
   function callUS() {
@@ -128,6 +133,10 @@ $(document).ready(function () {
       name: "close",
       function: closePage,
     },
+    {
+      name: "linkedin",
+      function: openLinkedIn,
+    }
     // {
     //   name: "fortune",
     //   function: fortune,
