@@ -24,6 +24,7 @@ $(document).ready(function () {
         "\n--Contact--\n" +
         "email || gmail     ⇒ send an email to me\n" +
         "telegram           ⇒ my telegram contact\n" +
+        "skype              ⇒ my skype number\n" +
         "call-IR            ⇒ call to my phone (Iran)\n" +
         "call-US            ⇒ call to my phone (United State)\n"
     );
@@ -47,6 +48,11 @@ $(document).ready(function () {
 
   function openGitHub() {
     window.open("https://github.com/MasoudHeidary/")
+  }
+
+  function openSkype() {
+    window.open("https://join.skype.com/invite/YHbD9JarTwVJ");
+    terminal.append("if skype link didn't worked, skype number is\nlive:.cid.6e0c82b72960edb1" + "\n");
   }
 
   function callUS() {
@@ -152,6 +158,10 @@ $(document).ready(function () {
     {
       name: 'github',
       function: openGitHub,
+    },
+    {
+      name: 'skype',
+      function: openSkype,
     }
     // {
     //   name: "fortune",
