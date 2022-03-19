@@ -14,15 +14,18 @@ $(document).ready(function () {
 
   function help() {
     terminal.append(
-      "clear              ⇒ clear terminal outpue\n" +
+      "--General--\n" +
+        "clear              ⇒ clear terminal outpue\n" +
+        "exit | close       ⇒ close page\n" +
+        "\n--Pages--\n" +
         "cv | resume        ⇒ open my resume website\n" +
         "linkedin           ⇒ open linkedin page\n" +
         "git | github       ⇒ open github page\n" +
-        "call-IR            ⇒ call to my phone (Iran)\n" +
-        "call-US            ⇒ call to my phone (United State)\n" +
+        "\n--Contact--\n" +
         "email || gmail     ⇒ send an email to me\n" +
         "telegram           ⇒ my telegram contact\n" +
-        "exit | close       ⇒ close page\n"
+        "call-IR            ⇒ call to my phone (Iran)\n" +
+        "call-US            ⇒ call to my phone (United State)\n"
     );
   }
 
