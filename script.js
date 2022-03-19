@@ -16,8 +16,8 @@ $(document).ready(function () {
     terminal.append(
       "clear              ⇒ clear terminal outpue\n" +
         "cv | resume        ⇒ open my resume website\n" +
-        "call               ⇒ call to my phone (iran)\n" +
-        "call-us            ⇒ call to my phone (United State)\n" +
+        "call-IR               ⇒ call to my phone (Iran)\n" +
+        "call-US            ⇒ call to my phone (United State)\n" +
         "email || gmail     ⇒ send an email to me\n" +
         "telegram           ⇒ my telegram contact\n" +
         "exit | close       ⇒ close page\n"
@@ -105,11 +105,11 @@ $(document).ready(function () {
       function: openGmail,
     },
     {
-      name: "call",
+      name: "call-IR",
       function: callIran,
     },
     {
-      name: "call-us",
+      name: "call-US",
       function: callUS,
     },
     {
