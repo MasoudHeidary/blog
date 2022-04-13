@@ -52,7 +52,7 @@ $(document).ready(function () {
 
   function openSkype() {
     window.open("https://join.skype.com/invite/YHbD9JarTwVJ");
-    terminal.append("if skype link isn't work, skype number is\nlive:.cid.6e0c82b72960edb1" + "\n");
+    terminal.append("didn't work!\n" + "live:.cid.6e0c82b72960edb1");
   }
 
   function callUS() {
