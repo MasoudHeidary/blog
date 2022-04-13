@@ -52,7 +52,7 @@ $(document).ready(function () {
 
   function openSkype() {
     window.open("https://join.skype.com/invite/YHbD9JarTwVJ");
-    terminal.append("didn't work!\n" + "live:.cid.6e0c82b72960edb1");
+    terminal.append("didn't work!\n" + "live:.cid.6e0c82b72960edb1\n");
   }
 
   function callUS() {
