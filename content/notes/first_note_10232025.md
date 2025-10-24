@@ -3,7 +3,11 @@ title: "First Note"
 date: 2025-10-23
 draft: false
 author: "Masoud"
-description: "starting the blog"
+description: "Why I finally started my blog using Hugo and how documenting what I learn helps me think better."
+slug: "first-note-starting-my-blog"
+keywords: ["blogging", "hugo", "learning", "personal notes", "developer life"]
+tags: ["personal", "thoughts"]
+categories: ["notes"]
 ---
 
 It’s been a long time since I started thinking about having my own blog.
