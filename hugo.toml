@@ -1,6 +1,6 @@
 baseURL = 'https://masoud-heidary.ir/'
 languageCode = 'en-us'
-title = 'Personal Blog'
+title = 'Masoud'
 theme = 'terminal'
 pagination.pagerSize = 5
 [caches]
@@ -15,14 +15,14 @@ pagination.pagerSize = 5
 
 [params]
   contentTypeName = "posts"
-  showMenuItems = 3
+  showMenuItems = 2
   showLanguageSelector = true
   fullWidthTheme = false
   centerTheme = false
-  autoCover = false
+  autoCover = true
   showLastUpdated = false
   # updatedDatePrefix = "Updated"
-  readingTime = true
+  readingTime = false
   # Toc = false   # table of content
   # TocTitle = false
   # dateFormat = "2006-01-02 3:04:06 PM MST"
@@ -36,23 +36,25 @@ pagination.pagerSize = 5
 
 [languages]
   [languages.en]
-  languageName = "English"
-    title = "Terminal"
-    subtitle = "A simple, retro theme for Hugo"
-    keywords = ""
-    copyright = "made by <a href='/about'>Masoud Heidary</a>"
-    menuMore = "Show more"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
-    minuteReadingTime = "min read"
-    words = "words"
+    languageName = "English"
+    title = "Masoud"
+    copyright = "Masoud/ blog powered by Hugo & panr theme"
+
+    [languages.en.params]
+      subtitle = "personal blog"
+      keywords = ""
+      menuMore = "Show more"
+      readMore = "Read more"
+      readOtherPosts = "Read other posts"
+      # newerPosts = "Newer posts"
+      # olderPosts = "Older posts"
+      missingContentMessage = "Page not found..."
+      missingBackButtonLabel = "Back to home page"
+      # inuteReadingTime = "min read"
+      # words = "words"
 
     [languages.en.params.logo]
-      logoText = "Terminal"
+      logoText = "Masoud"
       logoHomeLink = "/"
 
     [languages.en.menu]
@@ -61,10 +63,14 @@ pagination.pagerSize = 5
         name = "About"
         url = "/about"
       [[languages.en.menu.main]]
-        identifier = "contact"
-        name = "Contact"
-        url = "/contact"
+        identifier = "notes"
+        name = "Notes"
+        url = "/notes"
       [[languages.en.menu.main]]
-        identifier = "github"
-        name = "GitHub"
-        url = "/github"
+        identifier = "projects"
+        name = "Projects"
+        url = "/projects"
+      [[languages.en.menu.main]]
+        identifier = "resume"
+        name = "Resume"
+        url = "/resume"
