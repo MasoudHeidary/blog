@@ -29,6 +29,11 @@ pagination.pagerSize = 5
   # TocTitle = false
   # dateFormat = "2006-01-02 3:04:06 PM MST"
 
+  author = "Masoud Heidary"
+  subtitle = "Masoud Heidary personal blog"
+  description = "Masoud Heidary personal blog"
+  keywords = "Masoud Heidary, personal blog"
+
 [params.twitter]
   # set Twitter handles for Twitter cards
   # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
@@ -43,8 +48,7 @@ pagination.pagerSize = 5
     copyright = "Masoud/ blog powered by Hugo & panr theme"
 
     [languages.en.params]
-      subtitle = "personal blog"
-      keywords = ""
+      subtitle = "Masoud Heidary personal blog"
       menuMore = "Show more"
       readMore = "Read more"
       readOtherPosts = "Read other posts"
