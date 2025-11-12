@@ -47,7 +47,9 @@ Dispatcher is the master of communication with workers and allocation, if there 
 
 # This paper solutions
 
-In the following presentation, I have showed how this precise scheduling can be done. (file)
+In the following presentation, I have showed how this precise scheduling can be done. file
+
+
 
 
 
