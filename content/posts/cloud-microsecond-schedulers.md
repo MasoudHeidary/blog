@@ -3,7 +3,7 @@ title: "Cloud microsecond scheduler challenges, and a possible solution"
 date: 2025-11-11
 description: "A review of how schedulers work, and why in microsecond scale they are inefficient and possible solutions."
 slug: "cloud-microsecond-scheduler"
-keywords: ["hugo", "cloud", "AWS" "blog", "github pages", "web development", "tutorial"]
+keywords: ["hugo", "cloud", "AWS", "blog", "github pages", "web development", "tutorial"]
 tags: ["cloud", "tutorial"]
 categories: ["tutorials"]
 author: "Masoud"
